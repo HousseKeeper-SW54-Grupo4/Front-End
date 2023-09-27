@@ -1,0 +1,12 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  box-shadow: #14131B;
+}
+
+.menu-options{
+  display: flex;
+  gap: 20px;
+}
