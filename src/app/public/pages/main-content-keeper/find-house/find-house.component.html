@@ -1,0 +1,80 @@
+<mat-toolbar class="toolbar">
+  <img src="https://i.imgur.com/GrOEn9y.png" width="100px">
+  <div class="menu-options">
+    <a class="button-menu" mat-button (click)="goToKeeper()">INICIO</a>
+    <a class="button-menu" mat-button>BUSCAR CASAS</a>
+    <a class="button-menu" mat-button (click)="goToMessenger();">MENSAJERIA</a>
+    <a class="button-menu" mat-button (click)="goToProfile();"><img src="https://i.postimg.cc/Fs9Z3g3V/usuario-1.png" style="width: 3em;" ></a>
+  </div>
+</mat-toolbar>
+<div class="form-filter">
+  <mat-card class="filter">
+    <mat-card-header>
+      <mat-card-title class="title">ENCUENTRA LA CASA DE TUS SUEÑOS</mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="subtitle">
+      <mat-card-subtitle>País</mat-card-subtitle>
+      <mat-form-field>
+        <input matInput placeholder="Escribe..">
+      </mat-form-field>
+      <mat-card-subtitle>Departamento</mat-card-subtitle>
+      <mat-form-field>
+        <input matInput placeholder="Escribe..">
+      </mat-form-field>
+      <mat-card-subtitle>Distrito</mat-card-subtitle>
+      <mat-form-field>
+        <input matInput placeholder="Escribe..">
+      </mat-form-field>
+      <mat-card-subtitle>Dirección</mat-card-subtitle>
+      <mat-form-field>
+        <input matInput placeholder="Escribe..">
+      </mat-form-field>
+      <mat-card-subtitle>Precio</mat-card-subtitle>
+      <mat-form-field>
+        <input matInput type="number" placeholder="Escribe..">
+      </mat-form-field>
+      <mat-card-subtitle>Tiempo de estadia (Días)</mat-card-subtitle>
+      <mat-form-field>
+        <input matInput type="number" placeholder="Escribe..">
+      </mat-form-field>
+      <mat-card-subtitle>Cantidad de personas</mat-card-subtitle>
+      <mat-form-field>
+        <input matInput type="number" placeholder="Escribe..">
+      </mat-form-field>
+      <mat-card-subtitle>Cantidad de estrellas</mat-card-subtitle>
+      <mat-form-field>
+        <input matInput type="number" placeholder="Escribe..">
+      </mat-form-field>
+      <button mat-button style="color: black; background-color: #7cb9e8" class="button">Búsqueda</button>
+    </mat-card-content>
+  </mat-card>
+</div>
+<div class="examples-cards">
+  <mat-card class="example-data">
+    <mat-card-content>
+      <img src="https://images.adsttc.com/media/images/5451/9502/e58e/ce4c/0800/0029/newsletter/foto1.jpg?1414632680" width="225px"><br>
+      <label>Perú - Miraflores - Jr. Bruselias</label><br>
+      <label>$10</label><br>
+      <label>Capacidad máxima de 3 personas</label><br>
+      <label>4 estrellas</label>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-data">
+    <mat-card-content>
+      <img src="https://img10.naventcdn.com/avisos/11/00/53/80/02/40/1200x1200/88464113.jpg" width="280px"><br>
+      <label>Perú - San Borja - Calle La Técnica</label><br>
+      <label>$15</label><br>
+      <label>Capacidad máxima de 7 personas</label><br>
+      <label>3 estrellas</label>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="example-data">
+    <mat-card-content>
+      <img src="https://cdn.delujo.pe/data/img/proyecto/original/prm_2484.webp" width="350px"><br>
+      <label>Perú - San Isidro - Calle Los Cedros</label><br>
+      <label>$12</label><br>
+      <label>Capacidad máxima de 5 personas</label><br>
+      <label>4 estrellas</label>
+    </mat-card-content>
+  </mat-card>
+</div>
