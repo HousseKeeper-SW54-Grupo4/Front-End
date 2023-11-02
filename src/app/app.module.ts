@@ -19,6 +19,7 @@ import {PageNotFoundComponent} from './public/pages/page-not-found/page-not-foun
 import {KeeperComponent} from './public/pages/main-content-keeper/keeper/keeper.component';
 import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     KeeperComponent
   ],
   imports: [
+    HttpClientModule,
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
