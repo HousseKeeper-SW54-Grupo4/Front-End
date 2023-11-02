@@ -34,7 +34,4 @@ export class FindKeeperComponent implements OnInit{
   goToProfile(){
     this.router.navigateByUrl('/profile-traveler');
   }
-  goToLogin(){
-    this.router.navigateByUrl('/login');
-  }
 }
