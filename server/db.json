@@ -47,22 +47,6 @@
       "rating": 9.2
     }
   ],
-  "casas": [
-    {
-      "id": "make-it-last-bundle",
-      "title": "Make It Last",
-      "description": "Make it last with our largest handle Mug paired with the battery-extending Sliding Lid. It’s the perfect combination for taking a great cup of coffee outdoors or on the road. Keep your extra charging coaster at home or in the office, so wherever you go, a quick charge isn’t far away.",
-      "photoUrl": "https://ember.com/cdn/shop/products/HeroforCarChargerandTravelMugBundleApr2023fafafa_600x.jpg",
-      "price": 190.85,
-      "rating": 4.4
-    },
-    {
-      "id": "travel-mug-accessories-bundle",
-      "title": "Travel Mug Accessories",
-      "description": "Make the most of your Ember Travel Mug with the full lineup of accessories. This bundle includes everything you need to enhance your Ember Mug experience.",
-      "photoUrl": "https://ember.com/cdn/shop/files/Bundle_TMBB_TMSL_TMCC_00-black_fafafa_2000x2000_72dpi_600x.jpg",
-      "price": 74.85,
-      "rating": 4.5
   "houses": [
     {
       "id": "2489841",

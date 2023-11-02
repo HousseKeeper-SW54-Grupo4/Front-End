@@ -8,42 +8,65 @@
     <a class="button-menu" mat-button (click)="goToLogin();">Cerrar sesión</a>
   </div>
 </mat-toolbar>
+
 <div class="form-filter">
   <mat-card class="filter">
     <mat-card-header>
       <mat-card-title class="title">ENCUENTRA LA CASA DE TUS SUEÑOS</mat-card-title>
     </mat-card-header>
     <mat-card-content class="subtitle">
-      <mat-card-subtitle>País</mat-card-subtitle>
-      <mat-form-field>
-        <input matInput placeholder="Escribe.." [(ngModel)]="pais">
-      </mat-form-field>
-      <mat-card-subtitle>Ciudad</mat-card-subtitle>
-      <mat-form-field>
-        <input matInput placeholder="Escribe.." [(ngModel)]="ciudad">
-      </mat-form-field>
-      <mat-card-subtitle>Dirección</mat-card-subtitle>
-      <mat-form-field>
-        <input matInput placeholder="Escribe.." [(ngModel)]="direccion">
-      </mat-form-field>
-      <mat-card-subtitle>Precio</mat-card-subtitle>
-      <mat-form-field>
-        <input matInput type="number" placeholder="Escribe.." [(ngModel)]="precio">
-      </mat-form-field>
-      <mat-card-subtitle>Cantidad de personas</mat-card-subtitle>
-      <mat-form-field>
-        <input matInput type="number" placeholder="Escribe.." [(ngModel)]="capacidad">
-      </mat-form-field>
-      <mat-card-subtitle>Cantidad de estrellas</mat-card-subtitle>
-      <mat-form-field>
-        <input matInput type="number" placeholder="Escribe.." [(ngModel)]="estrellas">
-      </mat-form-field>
+      <div class="form-fields">
+        <div class="form-field">
+          <mat-card-subtitle>País</mat-card-subtitle>
+          <mat-form-field>
+            <input matInput placeholder="Escribe.." [(ngModel)]="pais">
+          </mat-form-field>
+        </div>
+
+        <div class="form-field">
+          <mat-card-subtitle>Ciudad</mat-card-subtitle>
+          <mat-form-field>
+            <input matInput placeholder="Escribe.." [(ngModel)]="ciudad">
+          </mat-form-field>
+        </div>
+
+        <div class="form-field">
+          <mat-card-subtitle>Dirección</mat-card-subtitle>
+          <mat-form-field>
+            <input matInput placeholder="Escribe.." [(ngModel)]="direccion">
+          </mat-form-field>
+        </div>
+
+        <div class="form-field">
+          <mat-card-subtitle>Precio</mat-card-subtitle>
+          <mat-form-field>
+            <input matInput type="number" placeholder="Escribe.." [(ngModel)]="precio">
+          </mat-form-field>
+        </div>
+
+        <div class="form-field">
+          <mat-card-subtitle>Cantidad de personas</mat-card-subtitle>
+          <mat-form-field>
+            <input matInput type="number" placeholder="Escribe.." [(ngModel)]="capacidad">
+          </mat-form-field>
+        </div>
+
+        <div class="form-field">
+          <mat-card-subtitle>Cantidad de estrellas</mat-card-subtitle>
+          <mat-form-field>
+            <input matInput type="number" placeholder="Escribe.." [(ngModel)]="estrellas">
+          </mat-form-field>
+        </div>
+      </div>
       <br>
-      <button mat-button style="color: black; background-color: #7cb9e8" class="button" (click)="onFilter()">Filtrar</button>
-      <button mat-button style="color: black; background-color: #7cb9e8" class="button" (click)="toReset()">Cancelar</button>
+      <div class="form-buttons">
+        <button mat-button style="color: black; background-color: #7cb9e8" class="button" (click)="onFilter()">Filtrar</button>
+        <button mat-button style="color: black; background-color: #7cb9e8" class="button" (click)="toReset()">Cancelar</button>
+      </div>
     </mat-card-content>
   </mat-card>
 </div>
+
 <div class="examples-cards">
   <div *ngFor="let house of Houses">
     <mat-card class="example-data">
