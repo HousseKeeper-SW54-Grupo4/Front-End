@@ -19,6 +19,12 @@ import {PageNotFoundComponent} from './public/pages/page-not-found/page-not-foun
 import {KeeperComponent} from './public/pages/main-content-keeper/keeper/keeper.component';
 import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
+import {HttpClientModule} from "@angular/common/http";
+import { FindKeeperComponent } from './public/pages/main-content-traveler/find-keeper/find-keeper.component';
+import { MessengerTravelerComponent } from './public/pages/main-content-traveler/messenger-traveler/messenger-traveler.component';
+import { ProfileTravelerComponent } from './public/pages/main-content-traveler/profile-traveler/profile-traveler.component';
+import { TravelerComponent } from './public/pages/main-content-traveler/traveler/traveler.component';
+
 
 @NgModule({
   declarations: [
@@ -30,9 +36,15 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     MessengerKeeperComponent,
     ProfileKeeperComponent,
     PageNotFoundComponent,
-    KeeperComponent
+    KeeperComponent,
+    FindKeeperComponent,
+    MessengerTravelerComponent,
+    ProfileTravelerComponent,
+    TravelerComponent,
+
   ],
   imports: [
+    HttpClientModule,
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,

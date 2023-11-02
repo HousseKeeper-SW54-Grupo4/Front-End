@@ -9,6 +9,7 @@
         <a  class="buttonnav" mat-button (click)="goToFindHouse()">BUSCAR CASAS</a>
         <a class="buttonnav" mat-button (click)="goToMessenger()">MENSAJERIA</a>
         <a mat-button  (click)="goToProfile()"><img src="https://i.postimg.cc/Fs9Z3g3V/usuario-1.png" style="width: 3em;" ></a>
+        <a class="button-menu" mat-button (click)="goToLogin();">Cerrar sesión</a>
       </div>
     </mat-toolbar>
 
@@ -20,7 +21,7 @@
         <br><br>
         <mat-label  class="letter1"><b>Elije donde</b></mat-label>
         <br><br>
-        <mat-label  class="letter2"><b>Hosperdarte</b></mat-label>
+        <mat-label  class="letter2"><b>Hospedarte</b></mat-label>
         <br><br>
         <mat-label style="text-align: left">Ubicación</mat-label>
         <mat-form-field >
@@ -40,28 +41,23 @@
         <br><br>
 
         <mat-card>
-          <mat-card-content style="text-align: center; box-shadow: transparent; border-radius: 0">
-            <div class="card-item">
-              <a href="/page-not-found">
-                <img src="https://i.imgur.com/baLPDsw.png" class="imagen1" style="max-width: 210px; margin-left: 15px; margin-top: 20px">
-              </a>
-              <div class="card-text">BRASIL</div>
+          <div class="card-container">
+            <div *ngFor="let viaje of viajes">
+              <mat-card class="viaje-card viaje-card-background">
+                <img mat-card-image [src]="viaje.photoUrl" alt="{{ viaje.title }}" class="viaje-image">
+                <mat-card-content>
+                  <h2 class="viaje-title">{{ viaje.title }}</h2>
+                  <p class="viaje-description">{{ viaje.description }}</p>
+                </mat-card-content>
+                <mat-card-footer>
+                  <mat-icon class="viaje-rating-icon">star</mat-icon>
+                  <span class="viaje-rating">{{ viaje.rating }}</span>
+                </mat-card-footer>
+              </mat-card>
             </div>
-            <div class="card-item">
-              <a href="/page-not-found">
-                <img src="https://i.imgur.com/1JPW4Rv.png" class="imagen1" style="max-width: 210px; margin-left: 15px; margin-top: 20px">
-              </a>
-              <div class="card-text">ESPAÑA</div>
-            </div>
-            <div class="card-item">
-              <a href="/page-not-found">
-                <img src="https://i.imgur.com/ElFxDf6.png" style="max-width: 210px; margin-left: 15px; margin-top: 20px">
-              </a>
-              <div class="card-text">COLOMBIA</div>
-            </div>
-
-          </mat-card-content>
+          </div>
         </mat-card>
+
         <br><br>
       </mat-card-content>
     </mat-card>

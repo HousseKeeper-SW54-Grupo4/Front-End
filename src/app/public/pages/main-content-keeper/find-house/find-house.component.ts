@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {Router} from "@angular/router";
-
 @Component({
   selector: 'app-find-house',
   templateUrl: './find-house.component.html',
@@ -16,5 +15,8 @@ export class FindHouseComponent {
   }
   goToProfile(){
     this.router.navigateByUrl('/profile-keeper');
+  }
+  goToLogin(){
+    this.router.navigateByUrl('/login');
   }
 }
