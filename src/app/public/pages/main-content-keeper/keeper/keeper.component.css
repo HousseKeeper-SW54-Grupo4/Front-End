@@ -172,3 +172,45 @@
 .viaje-card-background {
   background-color: orange;
 }
+
+
+.card-container {
+  display: flex;
+}
+
+.viaje-card-container {
+  margin-right: 10px; /* Ajusta según tus necesidades */
+}
+
+.viaje-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.viaje-image {
+  width: 150px;  /* Ajusta según tus necesidades */
+  height: auto;
+}
+
+.viaje-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viaje-rating-icon {
+  margin-right: 5px;  /* Ajusta según tus necesidades */
+}
+
+
+
+.viaje-card-background {
+  background-color: orange;
+}
+

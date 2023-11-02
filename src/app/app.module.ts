@@ -24,8 +24,6 @@ import { FindKeeperComponent } from './public/pages/main-content-traveler/find-k
 import { MessengerTravelerComponent } from './public/pages/main-content-traveler/messenger-traveler/messenger-traveler.component';
 import { ProfileTravelerComponent } from './public/pages/main-content-traveler/profile-traveler/profile-traveler.component';
 import { TravelerComponent } from './public/pages/main-content-traveler/traveler/traveler.component';
-
-
 @NgModule({
   declarations: [
     AppComponent,

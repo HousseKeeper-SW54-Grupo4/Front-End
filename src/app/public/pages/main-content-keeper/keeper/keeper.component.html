@@ -53,11 +53,23 @@
                   <mat-icon class="viaje-rating-icon">star</mat-icon>
                   <span class="viaje-rating">{{ viaje.rating }}</span>
                 </mat-card-footer>
+            <div *ngFor="let viaje of viajes" class="viaje-card-container">
+              <mat-card class="viaje-card viaje-card-background">
+                <div class="card-content">
+                  <img mat-card-image [src]="viaje.photoUrl" alt="{{ viaje.title }}" class="viaje-image">
+                  <mat-card-content>
+                    <h2 class="viaje-title">{{ viaje.title }}</h2>
+                    <p class="viaje-description">{{ viaje.description }}</p>
+                  </mat-card-content>
+                  <mat-card-footer class="viaje-footer">
+                    <mat-icon class="viaje-rating-icon">star</mat-icon>
+                    <span class="viaje-rating">{{ viaje.rating }}</span>
+                  </mat-card-footer>
+                </div>
               </mat-card>
             </div>
           </div>
         </mat-card>
-
         <br><br>
       </mat-card-content>
     </mat-card>
