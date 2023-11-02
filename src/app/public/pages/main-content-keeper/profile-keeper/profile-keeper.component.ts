@@ -26,6 +26,8 @@ export class ProfileKeeperComponent {
   goToMessenger(){
     this.router.navigateByUrl('/messenger-keeper');
   }
-
+  goToLogin(){
+    this.router.navigateByUrl('/login');
+  }
 }
 

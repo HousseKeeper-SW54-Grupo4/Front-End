@@ -1,0 +1,122 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  box-shadow: #14131B;
+}
+
+.mat-card-header{
+  text-align: center;
+  align-content: center;
+}
+
+.title{
+  display:flex;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin: 20px 0;
+  text-transform: uppercase;
+  align-content: center;
+  justify-content: center;
+}
+
+.subtitle{
+
+}
+
+.form-filter{
+  display: flex;
+  justify-content: center;
+}
+
+.filter{
+  display:flex;
+  width: 1000px;
+  border:0;
+  justify-content: center;
+}
+
+.examples-cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example-data{
+  background: lightskyblue;
+  padding: 5px;
+  width: 500px;
+  height: 500px;
+  margin: 5px;
+
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.menu-options{
+  display: flex;
+  gap: 20px;
+}
+
+/* Agrega estos estilos en tu archivo component.css */
+.examples-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.keeper-card {
+  width: 60%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: #a6d9ff;
+  border: 2px solid #004f81; /* Borde con color */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+.keeper-left,
+.keeper-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+.keeper-description {
+  flex: 1;
+
+  padding-right: 20px; /* Espacio entre la descripción y la imagen */
+  text-align: center;
+}
+
+.keeper-image {
+  width: 150px; /* Tamaño de la imagen */
+  height: 150px;
+  border-radius: 50%; /* Para hacer la imagen circular */
+}
+
+.keeper-name {
+  font-weight: bold; /* Texto en negrita para el nombre */
+  margin-top: 10px; /* Espacio entre el nombre y las estrellas */
+}
+
+.keeper-rating {
+  font-size: 20px; /* Tamaño de fuente del rating */
+  color: #f57000; /* Color del rating, puedes cambiarlo si deseas */
+}
+
+.keeper-location {
+  font-style: italic;
+  color: #555;
+}
+.custom-contact-button {
+  background-color: #0b67c7;
+  color: white; /* Cambia el color del texto del botón si es necesario */
+}

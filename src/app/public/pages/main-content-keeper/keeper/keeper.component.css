@@ -128,12 +128,49 @@
     color: #14131B;
     font-family: 'Poppins',sans-serif;
 }
-.imagen1{
-    flex-direction: column;
-    margin-right:25px;
-    margin-left: 25px;
 
-    max-width: 190px;
+.card-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.viaje-card {
+  max-width: 300px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.viaje-image {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.viaje-title {
+  margin: 10px 0;
+}
+
+
+.viaje-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.viaje-image {
+  width: 150px;  /* Ajusta este valor según lo desees */
+  height: auto;
+  border-radius: 5px;
+}
+.viaje-rating-icon {
+  font-size: 24px;
+  color: #fdd835; /* Puedes cambiar este color según tus preferencias */
+}
+.viaje-card-background {
+  background-color: orange;
 }
 
 
