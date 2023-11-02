@@ -37,7 +37,7 @@ import { TravelerComponent } from './public/pages/main-content-traveler/traveler
     ProfileKeeperComponent,
     PageNotFoundComponent,
     KeeperComponent,
-    UpdateProfileComponent
+    UpdateProfileComponent,
     FindKeeperComponent,
     MessengerTravelerComponent,
     ProfileTravelerComponent,

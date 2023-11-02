@@ -11,7 +11,7 @@ import {ViajesService} from "../../../services/viajes.service";
 export class KeeperComponent implements OnInit{
 
   viajes:Viajes[]=[];
-  title='keeper';
+  title='';
 
   constructor(private router: Router ,private viajeService:ViajesService){}
 

@@ -5,11 +5,10 @@
 
     <span class="example-spacer"></span>
     <div fxShow="true" fxHide.lt-md="true">
-      <a  class="buttonnav" mat-button >INICIO</a>
-      <a  class="buttonnav" mat-button (click)="goToFindKeeper()">BUSCAR KEEPER</a>
-      <a class="buttonnav" mat-button (click)="goToMessenger()">MENSAJERIA</a>
-      <a mat-button  (click)="goToProfile()"><img src="https://i.postimg.cc/Fs9Z3g3V/usuario-1.png" style="width: 3em;" ></a>
-      <a class="button-menu" mat-button (click)="goToLogin();">Cerrar sesión</a>
+      <a class="button-menu" mat-button (click)="goToTraveler();">INICIO</a>
+      <a class="button-menu" mat-button (click)="goToFindKeeper();">BUSCAR KEEPER</a>
+      <a class="button-menu" mat-button (click)="goToMessenger();">MENSAJERIA</a>
+      <a class="button-menu" mat-button (click)="goToProfile();"><img src="https://i.postimg.cc/Fs9Z3g3V/usuario-1.png" style="width: 3em;" ></a>
     </div>
   </mat-toolbar>
   <mat-card class="contenedor-principal" >

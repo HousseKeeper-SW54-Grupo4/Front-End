@@ -27,10 +27,13 @@ export class MessengerTravelerComponent implements OnInit{
   goToFindKeeper(){
     this.router.navigateByUrl('/find-keeper');
   }
-  goToProfile(){
-    this.router.navigateByUrl('/profile-traveler');
+  goToMessenger(){
+    this.router.navigateByUrl('/messenger-traveler');
   }
   goToLogin(){
     this.router.navigateByUrl('/login');
+  }
+  goToProfile(){
+    this.router.navigateByUrl('/profile-traveler');
   }
 }

@@ -22,8 +22,14 @@ export class FindKeeperComponent implements OnInit{
   goToTraveler(){
     this.router.navigateByUrl('/home-traveller');
   }
+  goToFindKeeper(){
+    this.router.navigateByUrl('/find-keeper');
+  }
   goToMessenger(){
     this.router.navigateByUrl('/messenger-traveler');
+  }
+  goToLogin(){
+    this.router.navigateByUrl('/login');
   }
   goToProfile(){
     this.router.navigateByUrl('/profile-traveler');

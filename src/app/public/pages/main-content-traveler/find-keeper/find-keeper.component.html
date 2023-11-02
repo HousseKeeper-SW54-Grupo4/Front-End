@@ -1,10 +1,10 @@
 <mat-toolbar class="toolbar">
   <img src="https://i.imgur.com/GrOEn9y.png" width="100px">
   <div class="menu-options">
-    <a class="button-menu" mat-button (click)="goToTraveler()">INICIO</a>
+    <a class="button-menu" mat-button (click)="goToTraveler();">INICIO</a>
+    <a class="button-menu" mat-button (click)="goToFindKeeper();">BUSCAR KEEPER</a>
     <a class="button-menu" mat-button (click)="goToMessenger();">MENSAJERIA</a>
-    <a class="button-menu" mat-button (click)="goToProfile();"><img src="https://i.postimg.cc/Fs9Z3g3V/usuario-1.png" style="width: 3em;" ></a>
-    <a class="button-menu" mat-button (click)="goToLogin();">Cerrar sesión</a>
+    <a class="button-menu" mat-button (click)="goToProfile()"><img src="https://i.postimg.cc/Fs9Z3g3V/usuario-1.png" style="width: 3em;" ></a>
   </div>
 </mat-toolbar>
 <div class="form-filter">
@@ -13,21 +13,33 @@
       <mat-card-title class="title">ENCUENTRA AL MEJOR KEEPER PARA TU HOGAR</mat-card-title>
     </mat-card-header>
     <mat-card-content class="subtitle">
-      <!-- Filtrado horizontal -->
-      <div class="horizontal-filter">
-        <mat-form-field>
-          <input matInput placeholder="País" />
-        </mat-form-field>
+      <div class="form-fields">
+        <div class="form-field">
+          <mat-form-field>
+            <input matInput placeholder="País" />
+          </mat-form-field>
+        </div>
+
+        <div class="form-field">
         <mat-form-field>
           <input matInput placeholder="Departamento" />
         </mat-form-field>
+        </div>
+
+        <div class="form-field">
         <mat-form-field>
           <input matInput placeholder="Dirección" />
         </mat-form-field>
+        </div>
+
+        <div class="form-field">
         <mat-form-field>
           <input matInput type="number" placeholder="Estrellas" />
         </mat-form-field>
-        <button mat-button style="color: black; background-color: #7cb9e8" class="button">Búsqueda</button>
+        </div>
+          <br>
+        <button mat-button style="color: black; background-color: #7cb9e8" class="button">Filtrar</button>
+        <button mat-button style="color: black; background-color: #7cb9e8" class="button">Cancelar</button>
       </div>
     </mat-card-content>
   </mat-card>

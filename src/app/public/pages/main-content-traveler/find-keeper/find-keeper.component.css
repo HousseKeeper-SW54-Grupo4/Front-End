@@ -24,7 +24,8 @@
 }
 
 .subtitle{
-
+  align-content: center;
+  text-align: center;
 }
 
 .form-filter{
@@ -60,10 +61,9 @@
 
 .menu-options{
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
-/* Agrega estos estilos en tu archivo component.css */
 .examples-cards {
   display: flex;
   flex-direction: column;
@@ -77,11 +77,12 @@
   align-items: center;
   text-align: center;
   background-color: #a6d9ff;
-  border: 2px solid #004f81; /* Borde con color */
-  border-radius: 10px; /* Bordes redondeados */
+  border: 2px solid #004f81;
+  border-radius: 10px;
   padding: 20px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
+
 .keeper-left,
 .keeper-right {
   display: flex;
@@ -92,24 +93,24 @@
 .keeper-description {
   flex: 1;
 
-  padding-right: 20px; /* Espacio entre la descripción y la imagen */
+  padding-right: 20px;
   text-align: center;
 }
 
 .keeper-image {
-  width: 150px; /* Tamaño de la imagen */
+  width: 150px;
   height: 150px;
-  border-radius: 50%; /* Para hacer la imagen circular */
+  border-radius: 50%;
 }
 
 .keeper-name {
-  font-weight: bold; /* Texto en negrita para el nombre */
-  margin-top: 10px; /* Espacio entre el nombre y las estrellas */
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 .keeper-rating {
-  font-size: 20px; /* Tamaño de fuente del rating */
-  color: #f57000; /* Color del rating, puedes cambiarlo si deseas */
+  font-size: 20px;
+  color: #f57000;
 }
 
 .keeper-location {
@@ -118,5 +119,29 @@
 }
 .custom-contact-button {
   background-color: #0b67c7;
-  color: white; /* Cambia el color del texto del botón si es necesario */
+  color: white;
+}
+
+.form-fields {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-field {
+  flex: 1;
+  max-width: 25%;
+  margin-right: 5px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.button {
+  margin: 0 10%;
+  padding: 10px 20px;
+  font-size: 16px;
 }
