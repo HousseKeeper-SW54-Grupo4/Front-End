@@ -12,19 +12,19 @@
     <mat-card-header>
       <mat-card-title class="title">Chats Disponibles</mat-card-title>
     </mat-card-header>
+
     <mat-card-content>
-      <mat-card-content class="person">
-        <label><b>Piero García</b></label><br>
-        <label>El auto está en buenas condiciones, inclusive hace 1 semana lo llevé al taller</label>
-        <button mat-button style="color: black; background-color: #7cb9e8">Abrir</button><br>
-        <br>
-      </mat-card-content>
-      <mat-card-content class="person">
-        <label><b>Gabriel Fernández</b></label><br>
-        <label>Me parece bien lo que dices</label>
-        <button mat-button style="color: black; background-color: #7cb9e8">Abrir</button><br>
-        <br>
-      </mat-card-content>
+      <div class="card-container">
+        <div *ngFor="let mensajeria of mensaje">
+          <div class="mensajeria-container">
+            <img src="{{ mensajeria.photoFace }}" alt="{{ mensajeria.nombre }}" class="mensajeria-photo">
+            <div class="mensajeria-content">
+              <h2 class="mensajeria-title">{{ mensajeria.nombre }}</h2>
+              <p class="mensajeria-description">{{ mensajeria.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </mat-card-content>
   </mat-card>
 </div>
