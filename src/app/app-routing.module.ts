@@ -9,6 +9,13 @@ import {MessengerKeeperComponent} from "./public/pages/main-content-keeper/messe
 import {ProfileKeeperComponent} from "./public/pages/main-content-keeper/profile-keeper/profile-keeper.component";
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
 import {KeeperComponent} from "./public/pages/main-content-keeper/keeper/keeper.component";
+import {TravelerComponent} from "./public/pages/main-content-traveler/traveler/traveler.component";                                       //Carpeta Traveler
+import {FindKeeperComponent} from "./public/pages/main-content-traveler/find-keeper/find-keeper.component";                            //Carpeta find keeper
+import {MessengerTravelerComponent} from "./public/pages/main-content-traveler/messenger-traveler/messenger-traveler.component";          //Carpeta nesenger-traveler
+import {ProfileTravelerComponent} from "./public/pages/main-content-traveler/profile-traveler/profile-traveler.component";      //Profile Traveler
+
+
+
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -18,6 +25,10 @@ const routes: Routes = [
   {path: 'find-house', component: FindHouseComponent},
   {path: 'messenger-keeper', component: MessengerKeeperComponent},
   {path: 'profile-keeper', component: ProfileKeeperComponent},
+  {path: 'home-traveller', component: TravelerComponent},                        //Carpeta Traveler
+  {path: 'find-keeper', component: FindKeeperComponent},                   // Carpeta find keeper
+  {path: 'messenger-traveler', component: MessengerTravelerComponent},       // Carpeta nesenger-traveler
+  {path: 'profile-traveler', component: ProfileTravelerComponent},           // Carpeta Profile Traveler
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: '**', component:PageNotFoundComponent}
 ]

@@ -1,16 +1,20 @@
-export class Viajes {
+export class keepers {
+
   id:number;
-  title:string;
+  name:string;
   description:string;
   photoUrl:string;
   rating:number;
-  price:number;
+  location:string;
+
+
   constructor(){
     this.id=0;
-    this.title='';
+    this.name='';
     this.description='';
+    this.location='';
     this.photoUrl='';
-    this.price=0;
     this.rating=0;
+
   }
 }

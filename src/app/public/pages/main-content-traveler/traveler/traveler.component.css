@@ -27,9 +27,9 @@
 
 .contenedor-principal{
   display: flex;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  background-image: url("https://i.imgur.com/OYCtG3j.png");
+  padding-bottom: 200px;
+  padding-top: 200px;
+  background-image: url("https://i.imgur.com/frG70kv.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0;
@@ -116,7 +116,7 @@
   font-size: 40px;
   display: flex;
   flex-flow: column;
-  color: #FF7A00;
+  color: #007bff;
 
   font-family: 'Poppins',sans-serif;
 }
@@ -135,82 +135,54 @@
   padding: 10px;
 }
 
-.viaje-card {
-  max-width: 300px;
+.keeperRequest-card {
+  background-color: #63c9ff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 10px;
-  display: inline-block;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.viaje-image {
-  width: 150px;
-  height: auto;
-  border-radius: 5px;
+.keeperRequest-image {
+  max-height: 200px;
+  object-fit: cover;
 }
 
-.viaje-title {
-  margin: 10px 0;
-}
-
-
-.viaje-card {
+.keeperRequest-header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  text-align: center;
-  padding: 10px;
+  margin: 10px;
 }
 
-.viaje-image {
-  width: 150px;  /* Ajusta este valor según lo desees */
-  height: auto;
-  border-radius: 5px;
-}
-.viaje-rating-icon {
-  font-size: 24px;
-  color: #fdd835; /* Puedes cambiar este color según tus preferencias */
-}
-.viaje-card-background {
-  background-color: orange;
+.keeperRequest-name {
+  font-size: 20px;
+  color: #14131B;
+  font-weight: bold;
 }
 
-
-.card-container {
-  display: flex;
-  overflow-x: auto;
-  padding: 10px;
-}
-
-.viaje-card-container {
-  margin-right: 10px; /* Ajusta según tus necesidades */
-}
-
-.viaje-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-content {
-  text-align: center;
-}
-
-.viaje-image {
-  width: 150px;  /* Ajusta según tus necesidades */
-  height: auto;
-}
-
-.viaje-footer {
+.keeperRequest-rating {
   display: flex;
   align-items: center;
-  justify-content: center;
+  color: #FF7A00;
 }
 
-.viaje-rating-icon {
-  margin-right: 5px;  /* Ajusta según tus necesidades */
+.keeperRequest-rating-icon {
+  font-size: 18px;
+  margin-right: 5px;
 }
 
-.viaje-card-background {
-  background-color: orange;
+.keeperRequest-rating-text {
+  font-size: 18px;
 }
 
+.keeperRequest-message {
+  font-size: 14px;
+  margin: 10px;
+  color: #333;
+}
+.keeperRequest-card:hover {
+  transform: scale(1.05); /* Escala un 5% más grande */
+  transition: transform 0.2s ease; /* Agrega una transición suave */
+}
