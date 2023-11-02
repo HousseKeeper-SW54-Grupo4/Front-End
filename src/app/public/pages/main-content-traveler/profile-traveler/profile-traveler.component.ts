@@ -39,6 +39,7 @@ export class ProfileTravelerComponent {
   goToLogin(){
     this.router.navigateByUrl('/login');
   }
+  
   goToProfile(){
     this.router.navigateByUrl('/profile-traveler');
   }

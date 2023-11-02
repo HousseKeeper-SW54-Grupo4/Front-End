@@ -30,7 +30,6 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
-
 }
 
 .user-data {
@@ -58,6 +57,7 @@ mat-card {
   align-items: center;
   padding: 20px;
 }
+
 .image-container {
   text-align: center;
   padding-top: 20px;
