@@ -134,5 +134,153 @@
       "description": "Las plantas ya estan regadas",
       "photoFace": "https://img.freepik.com/vector-premium/dibujos-animados-cara-mujer-joven_18591-44461.jpg"
     }
+  ],
+  "MensajesTraveller": [
+    {
+      "id": "1",
+      "nombre": "Juan Perez",
+      "description": "Hola, Piero García aquí. Solo quería informarte que el auto está en excelentes condiciones. Hace solo una semana lo llevé al taller para una revisión completa. Puedes estar tranquilo durante tu viaje.",
+      "photoFace": "https://static.vecteezy.com/system/resources/previews/002/702/880/non_2x/man-smiling-face-cartoon-free-vector.jpg"
+    },
+    {
+      "id": "2",
+      "nombre": "Luis Rodríguez",
+      "description": "¡Hola! Tu casa está en perfecto estado. He limpiado y ordenado cada rincón, y también saqué a pasear al perro para que esté feliz y activo. No te preocupes, todo está bajo control.",
+      "photoFace": "https://static.vecteezy.com/system/resources/previews/001/968/800/non_2x/man-face-head-character-cartoon-blue-lines-free-vector.jpg"
+    },
+    {
+      "id": "3",
+      "nombre": "María González",
+      "description": "Saludos. Solo quiero informarte que tus plantas ya han sido regadas. Están en perfecto estado y bien cuidadas. No tienes de qué preocuparte en ese aspecto.",
+      "photoFace": "https://img.freepik.com/vector-premium/dibujos-animados-cara-mujer-joven_18591-44461.jpg"
+    },
+    {
+      "id": "4",
+      "nombre": "María Rodríguez",
+      "description": "Hola, soy María. Todo está en orden en tu hogar. Las mascotas están felices y las plantas bien cuidadas. ¡Disfruta de tu viaje!",
+      "photoFace": "https://i.imgur.com/ahjIjAJ.jpg"
+    },
+    {
+      "id": "5",
+      "nombre": "Lucía Mendoza",
+      "description": "Hola, Lucía aquí. Tu hogar está en perfecto estado. Las mascotas han sido alimentadas y las plantas están bien regadas. Cualquier cosa que necesites, aquí estaré.",
+      "photoFace": "https://i.imgur.com/B1Cn3or.png"
+    },
+    {
+      "id": "6",
+      "nombre": "Andrea Castillo",
+      "description": "¡Hola! Tu hogar está en excelentes condiciones. Las mascotas están bien cuidadas y las plantas lucen hermosas. No dudes en contactarme si necesitas algo.",
+      "photoFace": "https://i.imgur.com/ghdR7Vg.png"
+    },
+    {
+      "id": "7",
+      "nombre": "Paula López",
+      "description": "Hola, soy Paula. Quería decirte que todo está bien en tu hogar. Las mascotas están contentas y las plantas están cuidadas. Si tienes alguna pregunta, no dudes en preguntar.",
+      "photoFace": "https://i.imgur.com/ucEPQ5a.png"
+    }
+  ],
+  "keepers": [
+    {
+      "id": "1",
+      "name": "Juan Pérez",
+      "location": "Miami, Florida",
+      "description": "¡Hola! Soy Juan. Con experiencia en el cuidado de hogares, puedo mantener tu casa segura y en perfectas condiciones. También soy un amante de las mascotas, así que no dudes en dejarme a cargo de tus amigos peludos mientras viajas.",
+      "photoUrl": "https://i.imgur.com/FVPCfSY.png",
+      "rating": 7.2
+    },
+    {
+      "id": "2",
+      "name": "María González",
+      "location": "Los Angeles, California",
+      "description": "Soy María, y mi pasión es el cuidado de mascotas. Puedo cuidar de tus animales con cariño y responsabilidad. Además, soy experta en mantenimiento del hogar, así que tu casa estará en buenas manos mientras no estás.",
+      "photoUrl": "https://i.imgur.com/HlqEjE0.png",
+      "rating": 8.5
+    },
+    {
+      "id": "3",
+      "name": "Luis Rodríguez",
+      "location": "Nueva York, Nueva York",
+      "description": "¡Hola! Soy Luis y me dedico al bricolaje y jardinería. Si necesitas que tu hogar luzca mejor que nunca, puedo encargarme de eso. Además, soy un Keeper responsable para garantizar la seguridad de tu casa mientras viajas.",
+      "photoUrl": "https://i.imgur.com/TbKbh8d.png",
+      "rating": 9.0
+    },
+    {
+      "id": "4",
+      "name": "Ana Sánchez",
+      "location": "San Francisco, California",
+      "description": "Mi especialidad es la limpieza y la organización. Tu hogar estará impecable cuando vuelvas. También puedo cuidar de tus plantas y mascotas. ¡Conmigo, todo estará en orden!",
+      "photoUrl": "https://i.imgur.com/wzC6ilP.png",
+      "rating": 8.7
+    },
+    {
+      "id": "5",
+      "name": "Carlos López",
+      "location": "Chicago, Illinois",
+      "description": "Me encanta la jardinería y mantener los espacios verdes. Tu jardín estará radiante cuando regreses a casa. Además, soy un apasionado del cuidado del hogar y las mascotas.",
+      "photoUrl": "https://i.imgur.com/B0qRvIR.png",
+      "rating": 8.2
+    },
+    {
+      "id": "6",
+      "name": "Elena Martínez",
+      "location": "Austin, Texas",
+      "description": "Me dedico al cuidado de hogares como si fueran míos. Tu tranquilidad es mi prioridad. Puedo cuidar de tus mascotas y plantas mientras no estás en casa.",
+      "photoUrl": "https://i.imgur.com/ghdR7Vg.png",
+      "rating": 9.1
+    },
+    {
+      "id": "7",
+      "name": "Pedro Ramírez",
+      "location": "Seattle, Washington",
+      "description": "Soy un amante de los deportes y la vida activa. Tu hogar estará lleno de energía positiva. Además, puedo cuidar de tus mascotas y mantener tu hogar seguro.",
+      "photoUrl": "https://i.imgur.com/gXahjEI.png",
+      "rating": 7.9
+    },
+    {
+      "id": "8",
+      "name": "Sofía Torres",
+      "location": "Denver, Colorado",
+      "description": "Me apasiona la cocina y el arte. Tu hogar estará lleno de sabor y creatividad. También soy responsable en el cuidado de tu hogar y mascotas.",
+      "photoUrl": "https://i.imgur.com/ucEPQ5a.png",
+      "rating": 8.4
+    },
+    {
+      "id": "9",
+      "name": "Javier García",
+      "location": "Portland, Oregon",
+      "description": "Me dedico al arte y la música. Tu hogar será un lugar inspirador. Además, puedo cuidar de tus plantas, mascotas y mantener tu hogar en perfectas condiciones.",
+      "photoUrl": "https://i.imgur.com/Pgnn7yp.png",
+      "rating": 8.0
+    }
+  ],
+  "keeperRequest": [
+    {
+      "id": "1",
+      "name": "Juan Pérez",
+      "message": "Me encantaría cuidar tu casa mientras estás de viaje. Tengo experiencia en cuidado de propiedades.",
+      "photoUrl": "https://i.imgur.com/IsgTH0N.jpg",
+      "rating": 7.2
+    },
+    {
+      "id": "2",
+      "name": "Luis Ramírez",
+      "message": "Ofrezco cuidar tu casa ya que estare un tiempo por Nueva York. Soy una persona responsable y confiable.",
+      "photoUrl": "https://i.imgur.com/SAFs5x5.jpg",
+      "rating": 6.2
+    },
+    {
+      "id": "3",
+      "name": "María González",
+      "message": "Estoy dispuesto a cuidar tu hogar en Nueva York. Vivo cerca y estaré atenta a cualquier necesidad.",
+      "photoUrl": "https://i.imgur.com/ahjIjAJ.jpg",
+      "rating": 9.2
+    },
+    {
+      "id": "4",
+      "name": "Jorge Chavez",
+      "message": "Me encantaria que me dieras la oportunidad de cuidar tu casa para demostrar mi experiencia",
+      "photoUrl": "https://i.imgur.com/uh1uNcy.jpg",
+      "rating": 5.2
+    }
   ]
 }

@@ -9,6 +9,10 @@ import {MessengerKeeperComponent} from "./public/pages/main-content-keeper/messe
 import {ProfileKeeperComponent} from "./public/pages/main-content-keeper/profile-keeper/profile-keeper.component";
 import {PageNotFoundComponent} from "./public/pages/page-not-found/page-not-found.component";
 import {KeeperComponent} from "./public/pages/main-content-keeper/keeper/keeper.component";
+import {TravelerComponent} from "./public/pages/main-content-traveler/traveler/traveler.component";
+import {FindKeeperComponent} from "./public/pages/main-content-traveler/find-keeper/find-keeper.component";
+import {MessengerTravelerComponent} from "./public/pages/main-content-traveler/messenger-traveler/messenger-traveler.component";
+import {ProfileTravelerComponent} from "./public/pages/main-content-traveler/profile-traveler/profile-traveler.component";
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -18,6 +22,10 @@ const routes: Routes = [
   {path: 'find-house', component: FindHouseComponent},
   {path: 'messenger-keeper', component: MessengerKeeperComponent},
   {path: 'profile-keeper', component: ProfileKeeperComponent},
+  {path: 'home-traveller', component: TravelerComponent},
+  {path: 'find-keeper', component: FindKeeperComponent},
+  {path: 'messenger-traveler', component: MessengerTravelerComponent},
+  {path: 'profile-traveler', component: ProfileTravelerComponent},
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: '**', component:PageNotFoundComponent}
 ]

@@ -22,7 +22,10 @@ import {MatSidenavModule} from "@angular/material/sidenav";
 import {HttpClientModule} from "@angular/common/http";
 import { UpdateProfileComponent } from './public/pages/update-profile/update-profile.component';
 import {MatDialogModule} from "@angular/material/dialog";
-
+import { FindKeeperComponent } from './public/pages/main-content-traveler/find-keeper/find-keeper.component';
+import { MessengerTravelerComponent } from './public/pages/main-content-traveler/messenger-traveler/messenger-traveler.component';
+import { ProfileTravelerComponent } from './public/pages/main-content-traveler/profile-traveler/profile-traveler.component';
+import { TravelerComponent } from './public/pages/main-content-traveler/traveler/traveler.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +37,11 @@ import {MatDialogModule} from "@angular/material/dialog";
     ProfileKeeperComponent,
     PageNotFoundComponent,
     KeeperComponent,
-    UpdateProfileComponent
+    UpdateProfileComponent,
+    FindKeeperComponent,
+    MessengerTravelerComponent,
+    ProfileTravelerComponent,
+    TravelerComponent,
   ],
   imports: [
     HttpClientModule,

@@ -74,4 +74,7 @@ export class FindHouseComponent implements OnInit{
   goToProfile(){
     this.router.navigateByUrl('/profile-keeper');
   }
+  goToLogin(){
+    this.router.navigateByUrl('/login');
+  }
 }
