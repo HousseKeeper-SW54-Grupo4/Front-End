@@ -59,4 +59,10 @@ export class ProfileKeeperComponent {
       }
     });
   }
+  signOut() {
+    localStorage.removeItem('currentUser');
+    localStorage.removeItem('accessToken');
+    this.router.navigate(['']).then();
+    console.log("Signed Out");
+  }
 }

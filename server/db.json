@@ -3,42 +3,42 @@
     {
       "id": "30843977760853",
       "title": "Brasil",
-      "description":  "Explora playas paradisíacas, selvas tropicales, y vibrante cultura en la tierra del fútbol, samba, y el icónico Cristo Redentor en Río de Janeiro.",
+      "description": "Explora playas paradisíacas, selvas tropicales, y vibrante cultura en la tierra del fútbol, samba, y el icónico Cristo Redentor en Río de Janeiro.",
       "photoUrl": "https://i.imgur.com/XNQyIuo.png",
       "rating": 8.5
     },
     {
       "id": "31570607800405",
       "title": "España",
-      "description":  "Descubre rica historia, deliciosa gastronomía, festivales animados, y bellas costas en este país diverso, hogar de ciudades fascinantes como Barcelona y Madrid.",
+      "description": "Descubre rica historia, deliciosa gastronomía, festivales animados, y bellas costas en este país diverso, hogar de ciudades fascinantes como Barcelona y Madrid.",
       "photoUrl": "https://i.imgur.com/3f08p6D.jpg",
       "rating": 7.3
     },
     {
       "id": "43036912976057",
       "title": "Estados unidos",
-      "description":  "Experimenta desde metrópolis pulsantes y parques nacionales impresionantes hasta cultura pop icónica en este vasto país de oportunidades ilimitadas.",
+      "description": "Experimenta desde metrópolis pulsantes y parques nacionales impresionantes hasta cultura pop icónica en este vasto país de oportunidades ilimitadas.",
       "photoUrl": "https://i.imgur.com/itrBlqm.png",
-      "rating": 9.0
+      "rating": 9
     },
     {
       "id": "30843977760853",
       "title": "Argentina",
-      "description":"Viaja por paisajes impresionantes, desde las cataratas del Iguazú hasta la Patagonia, y disfruta del tango, el asado, y la amabilidad argentina.",
+      "description": "Viaja por paisajes impresionantes, desde las cataratas del Iguazú hasta la Patagonia, y disfruta del tango, el asado, y la amabilidad argentina.",
       "photoUrl": "https://i.imgur.com/fACxrIF.png",
       "rating": 8.5
     },
     {
       "id": "484988977",
       "title": "Portugal",
-      "description":"Encántate con ciudades históricas, playas soleadas, y deliciosa gastronomía en un país que combina tradición y modernidad en cada rincón.",
+      "description": "Encántate con ciudades históricas, playas soleadas, y deliciosa gastronomía en un país que combina tradición y modernidad en cada rincón.",
       "photoUrl": "https://i.imgur.com/DumWIaB.png",
       "rating": 8.9
     },
     {
       "id": "41948555411641",
       "title": "Colombia",
-      "description":"Sumérgete en la biodiversidad, café de renombre mundial, ciudades vibrantes, y una cultura cálida en este paraíso tropical sudamericano.",
+      "description": "Sumérgete en la biodiversidad, café de renombre mundial, ciudades vibrantes, y una cultura cálida en este paraíso tropical sudamericano.",
       "photoUrl": "https://i.imgur.com/CbVRgEJ.png",
       "rating": 9.2
     }
@@ -202,7 +202,7 @@
       "location": "Nueva York, Nueva York",
       "description": "¡Hola! Soy Luis y me dedico al bricolaje y jardinería. Si necesitas que tu hogar luzca mejor que nunca, puedo encargarme de eso. Además, soy un Keeper responsable para garantizar la seguridad de tu casa mientras viajas.",
       "photoUrl": "https://i.imgur.com/TbKbh8d.png",
-      "rating": 9.0
+      "rating": 9
     },
     {
       "id": "4",
@@ -250,7 +250,7 @@
       "location": "Portland, Oregon",
       "description": "Me dedico al arte y la música. Tu hogar será un lugar inspirador. Además, puedo cuidar de tus plantas, mascotas y mantener tu hogar en perfectas condiciones.",
       "photoUrl": "https://i.imgur.com/Pgnn7yp.png",
-      "rating": 8.0
+      "rating": 8
     }
   ],
   "keeperRequest": [
@@ -281,6 +281,41 @@
       "message": "Me encantaria que me dieras la oportunidad de cuidar tu casa para demostrar mi experiencia",
       "photoUrl": "https://i.imgur.com/uh1uNcy.jpg",
       "rating": 5.2
+    }
+  ],
+  "users": [
+    {
+      "email": "traveller@gmail.com",
+      "password": "$2a$10$UQqFZ0eNBjeNr.LCo3P23e012o879mvbznCHxXta2N84E5mGSjuaK",
+      "name": "traveller",
+      "lastName": "security",
+      "birthdate": "1995-03-16",
+      "phone": 973939272,
+      "repeat_password": "123456",
+      "type": "traveller",
+      "id": 1
+    },
+    {
+      "email": "keeper@gmail.com",
+      "password": "$2a$10$1PSPinjcs8IzgNzgqi2s4OpP56LikkeVlulVp/sN5vlIW2lpAGlK6",
+      "name": "keeper",
+      "lastName": "security",
+      "birthdate": "1990-05-16",
+      "phone": 934283163,
+      "repeat_password": "123456",
+      "type": "keeper",
+      "id": 2
+    },
+    {
+      "email": "keeper2@gmail.com",
+      "password": "$2a$10$QmtoihZuDZ.9EVVrkXvUv.5j.Wrql5XV/T3GzsSCkpYTfg2lDDo8y",
+      "name": "Antonio",
+      "lastName": "Perez",
+      "birthdate": "1994-09-16",
+      "phone": 234913042,
+      "repeat_password": "123456",
+      "type": "keeper",
+      "id": 3
     }
   ]
 }

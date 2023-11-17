@@ -9,7 +9,7 @@ import {Router} from "@angular/router";
 export class LoginComponent {
   correo_electronico: any;
   contrasena: any;
-  selectedUserType: 'keeper' | 'traveller' | null = null;
+  selectedUserType: 'login' | 'keeper' | 'traveller' = 'login';
 
   constructor(private router: Router){}
   goToRegister(){
@@ -37,4 +37,41 @@ export class LoginComponent {
       this.goToTraveller();
     }
   }
+  getCurrentUserEmail() {
+    let currentUserString = localStorage.getItem('currentUser');
+    if (currentUserString) {
+      console.log(`current user: ${currentUserString}`);
+      let currentUser = (JSON.parse(currentUserString));
+      console.log(currentUser);
+      return currentUser.email;
+    } else return null;
+
+  }
+  getCurrentTokenUser() {
+    let token = localStorage.getItem('accessToken');
+    if (token) {
+      console.log(`token user: ${token}`);
+      let tokenUser = (JSON.parse(token));
+      console.log(tokenUser);
+      return token;
+    } else return null;
+
+  }
+  getSignInLink(): string {
+    if (this.selectedUserType === 'login') {
+      return '/sign-in';
+    } else if (this.selectedUserType === 'keeper') {
+      return '/sign-up-keeper';
+    } else if (this.selectedUserType === 'traveller') {
+      return '/sign-up-traveller';
+    }
+    return '/sign-in'; // En caso de que no coincida con ninguno, redirige a Sign-In
+  }
+  signOut() {
+    localStorage.removeItem('currentUser');
+    localStorage.removeItem('accessToken');
+    this.router.navigate(['']).then();
+    console.log("Signed Out");
+  }
+
 }

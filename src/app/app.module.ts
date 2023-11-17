@@ -12,7 +12,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatInputModule} from "@angular/material/input";
 import {MatCardModule} from "@angular/material/card";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {AppRoutingModule} from "./app-routing.module";
 import {MatButtonModule} from "@angular/material/button";
 import {PageNotFoundComponent} from './public/pages/page-not-found/page-not-found.component';
@@ -26,6 +26,16 @@ import { FindKeeperComponent } from './public/pages/main-content-traveler/find-k
 import { MessengerTravelerComponent } from './public/pages/main-content-traveler/messenger-traveler/messenger-traveler.component';
 import { ProfileTravelerComponent } from './public/pages/main-content-traveler/profile-traveler/profile-traveler.component';
 import { TravelerComponent } from './public/pages/main-content-traveler/traveler/traveler.component';
+import { SignInComponent } from './security/pages/sign-in/sign-in.component';
+import { SignUpTravellerComponent } from './security/pages/sign-up-traveller/sign-up-traveller.component';
+import { SignUpKeeperComponent } from './security/pages/sign-up-keeper/sign-up-keeper.component';
+import {AuthenticationService} from "./security/services/authentication.service";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatDividerModule} from "@angular/material/divider";
+import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatFormFieldModule} from "@angular/material/form-field";
+import {MatSortModule} from "@angular/material/sort";
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,22 +52,32 @@ import { TravelerComponent } from './public/pages/main-content-traveler/traveler
     MessengerTravelerComponent,
     ProfileTravelerComponent,
     TravelerComponent,
+    SignInComponent,
+    SignUpTravellerComponent,
+    SignUpKeeperComponent,
   ],
   imports: [
-    HttpClientModule,
     AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatInputModule,
-    MatCardModule,
+    HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatInputModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatToolbarModule,
     MatIconModule,
+    MatCardModule,
+    MatSortModule,
     MatSidenavModule,
-    MatDialogModule
+    MatDialogModule,
+    MatGridListModule,
+    MatDividerModule
   ],
-  providers: [],
+  providers: [AuthenticationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -39,7 +39,7 @@ export class ProfileTravelerComponent {
   goToLogin(){
     this.router.navigateByUrl('/login');
   }
-  
+
   goToProfile(){
     this.router.navigateByUrl('/profile-traveler');
   }
@@ -60,5 +60,11 @@ export class ProfileTravelerComponent {
         this.email = result.email;
       }
     });
+  }
+  signOut() {
+    localStorage.removeItem('currentUser');
+    localStorage.removeItem('accessToken');
+    this.router.navigate(['']).then();
+    console.log("Signed Out");
   }
 }

@@ -36,4 +36,10 @@ export class KeeperComponent implements OnInit{
   goToLogin(){
     this.router.navigateByUrl('/login');
   }
+  signOut() {
+    localStorage.removeItem('currentUser');
+    localStorage.removeItem('accessToken');
+    this.router.navigate(['']).then();
+    console.log("Signed Out");
+  }
 }
