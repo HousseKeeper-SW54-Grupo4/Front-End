@@ -9,15 +9,61 @@ import {KeepersService} from "../../../services/keepers.service";
   styleUrls: ['./find-keeper.component.css']
 })
 export class FindKeeperComponent implements OnInit{
-  keeper:keepers[]=[];
+  keepers: keepers[] = [];
+  country: string;
+  city: string;
+  streetAddress: string;
+  rating: number;
 
-  constructor(private router: Router,private keeperService:KeepersService){}
+  constructor(private router: Router, private keeperService: KeepersService) {
+    this.country = '';
+    this.city = '';
+    this.streetAddress = '';
+    this.rating = 0;
+  }
+
+  onFilter() {
+    var filteredKeepers = [...this.keepers];
+
+    if (this.country) {
+      filteredKeepers = filteredKeepers.filter(
+        keeper => keeper.country.toLowerCase().includes(this.country.toLowerCase())
+      );
+    }
+    if (this.city) {
+      filteredKeepers = filteredKeepers.filter(
+        keeper => keeper.city.toLowerCase().includes(this.city.toLowerCase())
+      );
+    }
+    if (this.streetAddress) {
+      filteredKeepers = filteredKeepers.filter(
+        keeper => keeper.streetAddress.toLowerCase().includes(this.streetAddress.toLowerCase())
+      );
+    }
+    if (this.rating) {
+      filteredKeepers = filteredKeepers.filter(keeper => keeper.rating === this.rating);
+    }
+
+    this.keepers = filteredKeepers;
+  }
+
+  toReset() {
+    this.country = '';
+    this.city = '';
+    this.streetAddress = '';
+    this.rating = 0;
+
+    // Vuelve a obtener todos los keepers
+    this.keeperService.getAll().subscribe((response: any) => {
+      this.keepers = response;
+    });
+  }
+
   ngOnInit() {
-
-    this.keeperService.getAll().subscribe((response:any)=>{
-
-      this.keeper=response
-    })
+    // Obtén todos los keepers al iniciar el componente
+    this.keeperService.getAll().subscribe((response: any) => {
+      this.keepers = response;
+    });
   }
   goToTraveler(){
     this.router.navigateByUrl('/home-traveller');

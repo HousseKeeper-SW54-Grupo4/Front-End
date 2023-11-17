@@ -183,7 +183,9 @@
     {
       "id": "1",
       "name": "Juan Pérez",
-      "location": "Miami, Florida",
+      "country": "Peru",
+      "ci": "Lima",
+      "streetAddress": "Jr. Bruselias 1254",
       "description": "¡Hola! Soy Juan. Con experiencia en el cuidado de hogares, puedo mantener tu casa segura y en perfectas condiciones. También soy un amante de las mascotas, así que no dudes en dejarme a cargo de tus amigos peludos mientras viajas.",
       "photoUrl": "https://i.imgur.com/FVPCfSY.png",
       "rating": 7.2
@@ -191,7 +193,9 @@
     {
       "id": "2",
       "name": "María González",
-      "location": "Los Angeles, California",
+      "country": "United States",
+      "city": "Los Angeles",
+      "streetAddress": "456 Oak St",
       "description": "Soy María, y mi pasión es el cuidado de mascotas. Puedo cuidar de tus animales con cariño y responsabilidad. Además, soy experta en mantenimiento del hogar, así que tu casa estará en buenas manos mientras no estás.",
       "photoUrl": "https://i.imgur.com/HlqEjE0.png",
       "rating": 8.5
@@ -199,7 +203,9 @@
     {
       "id": "3",
       "name": "Luis Rodríguez",
-      "location": "Nueva York, Nueva York",
+      "country": "United States",
+      "city": "New York",
+      "streetAddress": "789 Elm St",
       "description": "¡Hola! Soy Luis y me dedico al bricolaje y jardinería. Si necesitas que tu hogar luzca mejor que nunca, puedo encargarme de eso. Además, soy un Keeper responsable para garantizar la seguridad de tu casa mientras viajas.",
       "photoUrl": "https://i.imgur.com/TbKbh8d.png",
       "rating": 9
@@ -207,7 +213,9 @@
     {
       "id": "4",
       "name": "Ana Sánchez",
-      "location": "San Francisco, California",
+      "country": "United States",
+      "city": "San Francisco",
+      "streetAddress": "101 Pine St",
       "description": "Mi especialidad es la limpieza y la organización. Tu hogar estará impecable cuando vuelvas. También puedo cuidar de tus plantas y mascotas. ¡Conmigo, todo estará en orden!",
       "photoUrl": "https://i.imgur.com/wzC6ilP.png",
       "rating": 8.7
@@ -215,7 +223,9 @@
     {
       "id": "5",
       "name": "Carlos López",
-      "location": "Chicago, Illinois",
+      "country": "United States",
+      "city": "Chicago",
+      "streetAddress": "202 Maple St",
       "description": "Me encanta la jardinería y mantener los espacios verdes. Tu jardín estará radiante cuando regreses a casa. Además, soy un apasionado del cuidado del hogar y las mascotas.",
       "photoUrl": "https://i.imgur.com/B0qRvIR.png",
       "rating": 8.2
@@ -223,7 +233,9 @@
     {
       "id": "6",
       "name": "Elena Martínez",
-      "location": "Austin, Texas",
+      "country": "United States",
+      "city": "Austin",
+      "streetAddress": "303 Cedar St",
       "description": "Me dedico al cuidado de hogares como si fueran míos. Tu tranquilidad es mi prioridad. Puedo cuidar de tus mascotas y plantas mientras no estás en casa.",
       "photoUrl": "https://i.imgur.com/ghdR7Vg.png",
       "rating": 9.1
@@ -231,7 +243,9 @@
     {
       "id": "7",
       "name": "Pedro Ramírez",
-      "location": "Seattle, Washington",
+      "country": "United States",
+      "city": "Seattle",
+      "streetAddress": "404 Oak St",
       "description": "Soy un amante de los deportes y la vida activa. Tu hogar estará lleno de energía positiva. Además, puedo cuidar de tus mascotas y mantener tu hogar seguro.",
       "photoUrl": "https://i.imgur.com/gXahjEI.png",
       "rating": 7.9
@@ -239,7 +253,9 @@
     {
       "id": "8",
       "name": "Sofía Torres",
-      "location": "Denver, Colorado",
+      "country": "United States",
+      "city": "Denver",
+      "streetAddress": "505 Pine St",
       "description": "Me apasiona la cocina y el arte. Tu hogar estará lleno de sabor y creatividad. También soy responsable en el cuidado de tu hogar y mascotas.",
       "photoUrl": "https://i.imgur.com/ucEPQ5a.png",
       "rating": 8.4
@@ -247,7 +263,9 @@
     {
       "id": "9",
       "name": "Javier García",
-      "location": "Portland, Oregon",
+      "country": "United States",
+      "city": "Portland",
+      "streetAddress": "606 Elm St",
       "description": "Me dedico al arte y la música. Tu hogar será un lugar inspirador. Además, puedo cuidar de tus plantas, mascotas y mantener tu hogar en perfectas condiciones.",
       "photoUrl": "https://i.imgur.com/Pgnn7yp.png",
       "rating": 8
