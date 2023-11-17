@@ -62,8 +62,7 @@
     <div class="keeper-left">
       <mat-card-content class="keeper-description">
         <p>{{ keeper.description }}</p>
-        <p>{{ keeper.city }}</p>
-        <p>{{ keeper.streetAddress }}</p>
+        <div class="keeper-location">{{ keeper.country }} - {{ keeper.city }} - {{ keeper.streetAddress }}</div>
         <div class="contact-button">
           <button mat-button class="custom-contact-button">Solicitar Keeper</button>
         </div>
