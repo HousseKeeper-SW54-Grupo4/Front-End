@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 import {keepers} from "../../../model/keepers";
 import {KeepersService} from "../../../services/keepers.service";
-
+import {MensajeriaService} from "../../../services/mensajeria.service";
 @Component({
   selector: 'app-find-keeper',
   templateUrl: './find-keeper.component.html',
@@ -15,7 +15,7 @@ export class FindKeeperComponent implements OnInit{
   streetAddress: string;
   rating: number;
 
-  constructor(private router: Router, private keeperService: KeepersService) {
+  constructor(private router: Router, private keeperService: KeepersService, private mensajeriaService: MensajeriaService) {
     this.country = '';
     this.city = '';
     this.streetAddress = '';
@@ -79,5 +79,36 @@ export class FindKeeperComponent implements OnInit{
   }
   goToProfile(){
     this.router.navigateByUrl('/profile-traveler');
+  }
+  getCurrentUserName() {
+    let currentUserString = localStorage.getItem('currentUser');
+    if (currentUserString) {
+      console.log(`current user: ${currentUserString}`);
+      let currentUser = (JSON.parse(currentUserString));
+      console.log(currentUser);
+      return currentUser.name;
+    } else return null;
+
+  }
+  solicitarKeeper(keeperName: string) {
+    const currentUser = this.getCurrentUserName();
+
+    if (currentUser) {
+      const mensaje = {
+        nombre: currentUser,
+        description: "Quiero solicitar tus servicios, pongámonos en contacto",
+        photoFace: "https://cdn-icons-png.flaticon.com/512/3135/3135768.png"
+      };
+
+      // Llama al servicio para guardar el mensaje
+      this.mensajeriaService.guardarMensaje(mensaje).subscribe(
+        (response) => {
+          console.log('Mensaje guardado con éxito', response);
+        },
+        (error) => {
+          console.error('Error al guardar el mensaje', error);
+        }
+      );
+    }
   }
 }
