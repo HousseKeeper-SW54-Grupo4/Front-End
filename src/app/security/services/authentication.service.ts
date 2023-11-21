@@ -10,7 +10,7 @@ import { KeeperEntity } from "../model/keeper.entity";
 })
 export class AuthenticationService {
 
-  basePath: string = 'http://localhost:3000/api/v1';
+  basePath: string = 'https://house-keeper-api.vercel.app/api/v1';
   currentKeeper!: KeeperEntity;
   currentTraveller!: TravellerEntity;
 
