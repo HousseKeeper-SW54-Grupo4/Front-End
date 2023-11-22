@@ -2,14 +2,14 @@ import { Component } from '@angular/core';
 import {Router} from "@angular/router";
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  selector: 'app-signin',
+  templateUrl: './signin.component.html',
+  styleUrls: ['./signin.component.css']
 })
-export class LoginComponent {
+export class SigninComponent {
   correo_electronico: any;
   contrasena: any;
-  selectedUserType: 'login' | 'keeper' | 'traveller' = 'login';
+  selectedUserType: 'keeper' | 'traveller' | null = null;
 
   constructor(private router: Router){}
   goToRegister(){
@@ -22,9 +22,6 @@ export class LoginComponent {
 
   goToTraveller(){
     this.router.navigateByUrl('/home-traveller');
-  }
-  goToLogin(){
-    this.router.navigateByUrl('/sign-in');
   }
 
   selectUserType(type: 'keeper' | 'traveller') {
@@ -40,5 +37,4 @@ export class LoginComponent {
       this.goToTraveller();
     }
   }
-
 }

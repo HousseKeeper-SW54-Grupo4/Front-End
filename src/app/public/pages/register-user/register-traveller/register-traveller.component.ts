@@ -23,4 +23,10 @@ export class RegisterTravellerComponent {
   goToRegisterKeeper(){
     this.router.navigateByUrl('/register-keeper');
   }
+  signOut() {
+    localStorage.removeItem('currentUser');
+    localStorage.removeItem('accessToken');
+    this.router.navigate(['']).then();
+    console.log("Signed Out");
+  }
 }

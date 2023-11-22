@@ -4,8 +4,7 @@
     <a class="button-menu" mat-button (click)="goToTraveler();">INICIO</a>
     <a class="button-menu" mat-button (click)="goToFindKeeper();">BUSCAR KEEPER</a>
     <a class="button-menu" mat-button (click)="goToMessenger();">MENSAJERIA</a>
-    <a class="button-menu" mat-button><img src="https://i.postimg.cc/Fs9Z3g3V/usuario-1.png" style="width: 3em;" ></a>
-    <a class="button-menu" mat-button (click)="goToLogin();">Cerrar sesión</a>
+    <a class="button-menu" mat-button (click)="goToProfile();"><img src="https://i.postimg.cc/Fs9Z3g3V/usuario-1.png" style="width: 3em;" ></a>
   </div>
 </mat-toolbar>
 <div class="user-info">
@@ -13,16 +12,15 @@
     <mat-card-header>
       <mat-card-title class="title">Información del Usuario</mat-card-title>
     </mat-card-header>
-    <div class="image-container">
-      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" width="100px">
-    </div>
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" class="user-image"><br>
     <mat-card-content class="subtitle">
-      <mat-card-subtitle><b>Nombres:</b> {{name}}</mat-card-subtitle>
-      <mat-card-subtitle><b>Apellidos:</b> {{lastName}}</mat-card-subtitle>
-      <mat-card-subtitle><b>Día de Nacimiento:</b> {{birthdate}}</mat-card-subtitle>
-      <mat-card-subtitle><b>Teléfono:</b> {{phone}}</mat-card-subtitle>
-      <mat-card-subtitle><b>Correo Electrónico:</b> {{email}}</mat-card-subtitle>
-      <button mat-button style="color: black; background-color: #7cb9e8" class="button">Actualizar información</button>
+      <mat-card-subtitle class="user-data"><b>Nombres:</b> {{name}}</mat-card-subtitle>
+      <mat-card-subtitle class="user-data"><b>Apellidos:</b> {{lastName}}</mat-card-subtitle>
+      <mat-card-subtitle class="user-data"><b>Día de Nacimiento:</b> {{birthdate | date:'dd-MM-yyyy'}}</mat-card-subtitle>
+      <mat-card-subtitle class="user-data"><b>Teléfono:</b> {{phone}}</mat-card-subtitle>
+      <mat-card-subtitle class="user-data"><b>Correo Electrónico:</b> {{email}}</mat-card-subtitle>
+      <button mat-button class="update-button" (click)="openUpdateDialog()">Actualizar información</button>
+      <button mat-button class="update-button"  (click)="signOut()">Sign-Out</button>
     </mat-card-content>
   </mat-card>
 </div>

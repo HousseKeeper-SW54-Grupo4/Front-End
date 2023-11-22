@@ -46,14 +46,13 @@ export class FindHouseComponent implements OnInit{
       filteredHouses = filteredHouses.filter(house => house.price <= this.precio);
     }
     if (this.capacidad) {
-      filteredHouses = filteredHouses.filter(house => house.capacity >= this.capacidad);
+      filteredHouses = filteredHouses.filter(house => house.capacity == this.capacidad);
     }
     if (this.estrellas) {
-      filteredHouses = filteredHouses.filter(house => house.rating >= this.estrellas);
+      filteredHouses = filteredHouses.filter(house => house.rating == this.estrellas);
     }
     this.Houses = filteredHouses;
   }
-
   toReset(){
     this.pais = '';
     this.ciudad = '';

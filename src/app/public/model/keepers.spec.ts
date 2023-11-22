@@ -1,6 +1,6 @@
 import { keepers } from './keepers';
 
-describe('Viajes', () => {
+describe('keepers', () => {
   it('should create an instance', () => {
     expect(new keepers()).toBeTruthy();
   });

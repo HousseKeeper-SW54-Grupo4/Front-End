@@ -5,15 +5,12 @@ export class Viajes {
   photoUrl:string;
   rating:number;
   price:number;
-  bundleId:string;
-  rating:number;
   constructor(){
     this.id=0;
     this.title='';
     this.description='';
     this.photoUrl='';
     this.price=0;
-    this.bundleId='';
     this.rating=0;
   }
 }

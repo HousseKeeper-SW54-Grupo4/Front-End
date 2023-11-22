@@ -15,7 +15,7 @@ export class BaseService<T> {
       'Content-Type': 'application/json'
     })
   }
-  constructor(private http: HttpClient) { }
+  constructor(protected http: HttpClient) { }
 
   private resourcePath(): string {
     return `${this.basePath}${this.resourceEndpoint}`;

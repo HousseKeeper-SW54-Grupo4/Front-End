@@ -11,7 +11,7 @@ import {KeeperRequestService} from "../../../services/keeper-request.service";
 })
 export class TravelerComponent implements OnInit{
   keeperRequest:keeperRequest[]=[];
-  title='Escriba un nombre';
+  title='';
 
   constructor(private router: Router,private keeperService:KeeperRequestService){}
   ngOnInit() {
@@ -21,17 +21,19 @@ export class TravelerComponent implements OnInit{
       this.keeperRequest=response
     })
   }
+  goToTraveler(){
+    this.router.navigateByUrl('/home-traveller');
+  }
   goToFindKeeper(){
     this.router.navigateByUrl('/find-keeper');
   }
   goToMessenger(){
     this.router.navigateByUrl('/messenger-traveler');
   }
-  goToProfile(){
-    this.router.navigateByUrl('/profile-traveler');
-  }
-
   goToLogin(){
     this.router.navigateByUrl('/login');
+  }
+  goToProfile(){
+    this.router.navigateByUrl('/profile-traveler');
   }
 }

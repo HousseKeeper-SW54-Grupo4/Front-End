@@ -11,7 +11,7 @@ import {ViajesService} from "../../../services/viajes.service";
 export class KeeperComponent implements OnInit{
 
   viajes:Viajes[]=[];
-  title='keeper';
+  title='';
 
   constructor(private router: Router ,private viajeService:ViajesService){}
 
@@ -35,5 +35,11 @@ export class KeeperComponent implements OnInit{
   }
   goToLogin(){
     this.router.navigateByUrl('/login');
+  }
+  signOut() {
+    localStorage.removeItem('currentUser');
+    localStorage.removeItem('accessToken');
+    this.router.navigate(['']).then();
+    console.log("Signed Out");
   }
 }
