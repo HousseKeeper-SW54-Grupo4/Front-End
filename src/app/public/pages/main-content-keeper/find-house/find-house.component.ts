@@ -42,8 +42,9 @@ export class FindHouseComponent implements OnInit{
     if (this.direccion){
       filteredHouses = filteredHouses.filter(house => house.streetAddress.toLowerCase().includes(this.direccion.toLowerCase()));
     }
-    if (this.precio) {
-      filteredHouses = filteredHouses.filter(house => house.price <= this.precio);
+    if (this.precio !== null && this.precio !== undefined) {
+      const precioFormateado = `$${this.precio}`;
+      filteredHouses = filteredHouses.filter(house => house.price.toString() === precioFormateado);
     }
     if (this.capacidad) {
       filteredHouses = filteredHouses.filter(house => house.capacity == this.capacidad);
