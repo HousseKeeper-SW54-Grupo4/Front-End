@@ -40,8 +40,9 @@ export class FindKeeperComponent implements OnInit{
         keeper => keeper.streetAddress.toLowerCase().includes(this.streetAddress.toLowerCase())
       );
     }
-    if (this.rating) {
-      filteredKeepers = filteredKeepers.filter(keeper => keeper.rating === this.rating);
+    if (this.rating !== null && this.rating !== undefined) {
+      const ratingFormateado = `${this.rating}`;
+      filteredKeepers = filteredKeepers.filter(keeper => keeper.rating.toString() === ratingFormateado);
     }
 
     this.keepers = filteredKeepers;
