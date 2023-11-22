@@ -300,40 +300,5 @@
       "photoUrl": "https://i.imgur.com/uh1uNcy.jpg",
       "rating": 5.2
     }
-  ],
-  "users": [
-    {
-      "email": "traveller@gmail.com",
-      "password": "$2a$10$UQqFZ0eNBjeNr.LCo3P23e012o879mvbznCHxXta2N84E5mGSjuaK",
-      "name": "traveller",
-      "lastName": "security",
-      "birthdate": "1995-03-16",
-      "phone": 973939272,
-      "repeat_password": "123456",
-      "type": "traveller",
-      "id": 1
-    },
-    {
-      "email": "keeper@gmail.com",
-      "password": "$2a$10$1PSPinjcs8IzgNzgqi2s4OpP56LikkeVlulVp/sN5vlIW2lpAGlK6",
-      "name": "keeper",
-      "lastName": "security",
-      "birthdate": "1990-05-16",
-      "phone": 934283163,
-      "repeat_password": "123456",
-      "type": "keeper",
-      "id": 2
-    },
-    {
-      "email": "keeper2@gmail.com",
-      "password": "$2a$10$QmtoihZuDZ.9EVVrkXvUv.5j.Wrql5XV/T3GzsSCkpYTfg2lDDo8y",
-      "name": "Antonio",
-      "lastName": "Perez",
-      "birthdate": "1994-09-16",
-      "phone": 234913042,
-      "repeat_password": "123456",
-      "type": "keeper",
-      "id": 3
-    }
   ]
 }
